@@ -52,13 +52,10 @@ export class MlflowService {
   /**
    * Search mlflow experiments
    */
-  static searchExperiments = (data: any) => {
-    return transformSearchExperimentsResponse( {"experiments": []})
-  }
-    //console.error('in search exp');
-   /* getBigIntJson({ relativeUrl: 'ajax-api/2.0/mlflow/experiments/search', data }).then(
+  static searchExperiments = (data: any) =>
+    getBigIntJson({ relativeUrl: 'ajax-api/2.0/mlflow/experiments/search', data }).then(
       transformSearchExperimentsResponse,
-    );*/
+    );
 
   /**
    * Get mlflow experiment
@@ -91,8 +88,7 @@ export class MlflowService {
    * Search datasets used in experiments
    */
   static searchDatasets = (data: any) =>
-    console.error("heelo");
-    //postJson({ relativeUrl: 'ajax-api/2.0/mlflow/experiments/search-datasets', data });
+    postJson({ relativeUrl: 'ajax-api/2.0/mlflow/experiments/search-datasets', data });
 
   /**
    * Restore a mlflow experiment run

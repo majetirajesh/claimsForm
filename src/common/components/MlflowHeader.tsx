@@ -73,7 +73,7 @@ export const MlflowHeader = ({
               fontSize: 25,
               alignItems: "baseline",
               fontStyle: "italic"
-            }}>RAI Flow</span>
+            }}>J.P Morgan</span>
             
         </Link>
 
@@ -91,7 +91,7 @@ export const MlflowHeader = ({
           to={ModelRegistryRoutes.modelListPageRoute}
           style={isModelsActive(location) ? classNames.activeNavLink : undefined}
         >
-          ML Flow
+          RAI Flow
         </Link>
         <NavigationItem
             expanded={expanded}

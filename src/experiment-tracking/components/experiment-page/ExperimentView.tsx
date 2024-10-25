@@ -74,12 +74,12 @@ export const ExperimentView = () => {
     seedInitialUIState(experiments, runsData);
   }, [seedInitialUIState, experiments, runsData]);
 
- /* useEffect(() => {
+  useEffect(() => {
     const requestAction = searchDatasetsApi(experimentIds);
     dispatch(requestAction).catch((e) => {
       Utils.logErrorAndNotifyUser(e);
     });
-  }, [dispatch, experimentIds]);*/
+  }, [dispatch, experimentIds]);
 
   const isComparingExperiments = experimentIds.length > 1;
 
